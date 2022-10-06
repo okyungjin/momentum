@@ -1,3 +1,5 @@
+import { getRandomInt } from './utils.js';
+
 const $quote = document.querySelector('#quote span:first-child');
 const $author = document.querySelector('#quote span:last-child');
 
@@ -12,11 +14,6 @@ fetchedQuotes
 function getQuoteByRandomIndex(quotes) {
   const index = getRandomInt(0, quotes.length);
   return quotes[index];
-}
-
-// [from, to)
-function getRandomInt(from, to) {
-  return Math.floor(Math.random() * to);
 }
 
 function showQuote({ quote, author }) {
