@@ -26,8 +26,6 @@ function paintTodo(newTodo) {
   const span = document.createElement('span');
   span.innerText = newTodo.label;
 
-  console.log(span.innerText)
-
   const deleteBtn = document.createElement('button');
   deleteBtn.innerText = '❌';
   deleteBtn.addEventListener('click', deleteTodo);
